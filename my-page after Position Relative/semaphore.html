@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .semaphore {
+      margin: 0 auto;
+      min-width: 100px;
+      width: 30%;
+      max-width: 200px;
+      padding: 20px;
+      background-color: #444;
+      border-radius: 50px;
+    }
+    
+    .light {
+      border-radius: 50%;
+      padding-bottom: 100%;
+      margin-bottom: 5%;
+    }
+    
+    .light--stop {
+      background-color: #400;
+    }
+    
+    .light--ready {
+      background-color: #440;
+    }
+    
+    .light--go {
+      background-color: #040;
+    }
+    
+    @media (max-width: 500px) {
+      .light--stop {
+        background-color: #f00;
+      }
+    }
+    
+    @media (min-width: 500px) and (max-width: 600px) {
+      .light--ready {
+        background-color: #ff0;
+      }
+    }
+    
+    @media (min-width: 600px) {
+      .light--go {
+        background-color: #0f0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="semaphore">
+    <div class="light light--stop"></div>
+    <div class="light light--ready"></div>
+    <div class="light light--go"></div>
+  </main>
+</body>
+</html>

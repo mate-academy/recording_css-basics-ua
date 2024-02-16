@@ -1,0 +1,55 @@
+<!-- #region HEAD -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <link rel="icon" href="ma.png">
+  <title>Mate academy</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- #endregion -->
+<body>
+  <h1>Mate academy</h1>
+
+  <form action="http://localhost:3000/api" method="post">
+    <div class="form-field">
+      Username: <br>
+      <input type="text" name="username">
+    </div>
+
+    <div class="form-field">
+      Email: <br>
+      <input type="email" name="email">
+    </div>
+
+    <div class="form-field">
+      Password: <br>
+      <input type="password" name="password">
+    </div>
+
+    <label class="form-field">
+      <input type="checkbox" name="accepted" value="yes">
+      I accept the terms
+    </label>
+
+    <div class="form-field">
+      <input 
+        id="remember-me"
+        type="checkbox" 
+        name="remember" 
+        value="yes"
+        checked
+      >
+      <label for="remember-me">Remember me</label>
+    </div>
+
+    <button>Sign up</button>
+  </form>
+</body>
+</html>
